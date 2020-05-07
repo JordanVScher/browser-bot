@@ -1,25 +1,24 @@
+import flow from './flow';
+
 const introMsg = {
 	messages: [
 		{
-			content: 'Hi',
+			type: 'embed',
+			content: flow.avatarImage,
 		},
 		{
-			content: 'Click a button',
+			content: flow.getStarted,
 		},
 	],
 	action: {
 		type: 'button',
 		action: [
 			{
-				text: 'One',
-				value: 'one',
-			},
-			{
-				text: 'Two',
-				value: 'two',
+				text: 'Conversar',
+				value: 'greetings',
 			},
 		],
 	},
 };
 
-module.exports = introMsg;
+export default introMsg;
